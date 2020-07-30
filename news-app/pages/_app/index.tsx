@@ -33,7 +33,6 @@ class WebApp extends App<AppWithStore> {
 
         return (
             <Provider store={store}>
-
                 <ThemeProvider theme={theme}>
                     <Head>
                         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=1"/>

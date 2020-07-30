@@ -68,7 +68,7 @@ The main backend endpoint is the `/articles` endpoint, which can return the [top
 
 The front-end pings the endpoint, loads the data accordingly and renders it for the reader on the homepage.
 
-In `news-app` front-end: `App.vue` renders different views (in `src/views`) through the router, and pulls in data from the backend endpoint to load each into its own article component (`src/components/Article.vue`). The main view is `src/views/Home.vue`
+In `news-app` front-end: `news-app/server/index.ts` renders different views (in `news-app/server/routes.ts`) through the router, and pulls in data from the backend endpoint to load each into its own article component (`news-app/src/Components/NewsCard`). The main view is `news-app/pages/home/index.tsx`
 
 In `news-service` backend: 
 - `serverless.yml` defines how the endpoints will be declared for the provider, as well as doing some basic request validation / handling. Written in the context of an AWS Lambda service, as that can be easily deployed, basically free and is still scalable
