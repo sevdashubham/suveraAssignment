@@ -1,0 +1,64 @@
+form {
+    outline: 0;
+    float: left;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form > .textbox {
+    outline: 0;
+    border: 1px solid #d3d3d3;
+    height: 38px;
+    width: 100%;
+    line-height:38px;
+    padding: 0 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #212121;
+    float: left;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 5px;
+}
+
+form > .textbox:focus {
+    outline: 0;
+    background-color: #FFF;
+    border: 2px solid #1F2833;
+}
+
+form > .button {
+    outline: 0;
+    background: none;
+    background-color: #adddcf;
+    float: left;
+    height:  36px;
+    width: 42px;
+    text-align: center;
+    line-height: 36px;
+    border: 0;
+    color: #FFF;
+    font-size: 16px;
+    text-rendering: auto;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: background-color .4s ease;
+    transition: background-color .4s ease;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+form > .button:hover {
+    background-color: rgba(0, 150, 136, 0.8);
+}
+
+.react-datepicker__input-container input {
+    height: 36px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.react-datepicker__input-container input:focus {
+    outline: 0;
+    background-color: #FFF;
+    border: 2px solid #1F2833;
+}
