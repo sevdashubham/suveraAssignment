@@ -1,6 +1,7 @@
 // #region Global Imports
 import * as React from "react";
 import App, { AppInitialProps, AppContext } from "next/app";
+import Head from 'next/head'
 import { Provider } from "react-redux";
 import { ThemeProvider } from "styled-components";
 import withRedux from "next-redux-wrapper";
@@ -32,7 +33,12 @@ class WebApp extends App<AppWithStore> {
 
         return (
             <Provider store={store}>
+
                 <ThemeProvider theme={theme}>
+                    <Head>
+                        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=1"/>
+                        <title>NewsAPI Feed</title>
+                    </Head>
                     <Component {...pageProps} />
                 </ThemeProvider>
             </Provider>
