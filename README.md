@@ -12,22 +12,25 @@ For the database evaluation task, there are 3 questions are in the included [DB-
 
 ##  What is the Challenge?
 
-Please fork the repository to begin the task. [Submission guidelines](#what-we-are-looking-for) are at the bottom of this page 😊
-
 1] First, the code: After you have gotten familiar with the app, [technical details of the app are below](#main-app-functionality--file-structure), we would like for you to:
-1. add a section to the homepage which allows the user to filter the results according to **ONE** category that a reader might want to filter news by (e.g. topic, source, date, or ??) 
-2. add at least 1 or 2 tests to the front-end web app
-3. implement web accessibility on components
+1. [x] add a section to the homepage which allows the user to filter the results according to **ONE** category that a reader might want to filter news by (e.g. topic, source, date, or ??) 
+2. [x] add at least 1 or 2 tests to the front-end web app
+![news-test](news-test.png)
+3. [x] implement web accessibility on components
 4. *(optional tasks)* If you find that you have time and would like to make the front-end app even nicer, you could tackle one of the following tasks:
-   - improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
-   - improve the overall design of the homepage
+   - [x] improve the functionality & design of the Article component (`src/components/Article.vue`) so that it is more intuitive to a reader
+   - [x] improve the overall design of the homepage
    - make the website SEO friendly
    
 **If you prefer, you are welcome to use your own/preferred front-end framework (e.g. React)**, to ping our included backend service. You are also welcome to **make any changes to the codebase that you would like to, as long as it is still functional.** Please remember that this is meant to take up to **3 hours in total**, and is merely an exercise, so we are not expecting the entire moon, just holistic improvements! 😬 😅
 
-2] Then, analytics design: create a markdown file describing what **types of user behaviour** you would like to capture on this page for an analytical framework (e.g. [Heap](https://docs.heap.io/docs), [Amplitude](https://developers.amplitude.com/docs) or [Mixpanel](https://developer.mixpanel.com/docs)), and **why**.
+2] Then, **[Analytics Design](Analytics.md)**: create a markdown file describing what **types of user behaviour** you would like to capture on this page for an analytical framework (e.g. [Heap](https://docs.heap.io/docs), [Amplitude](https://developers.amplitude.com/docs) or [Mixpanel](https://developer.mixpanel.com/docs)), and **why**.
+
+Solution: **[Analytics Design](Analytics.md)**
 
 3] Finally, write include your answers to the **[Database Evaluation Task](DB-Task.md)** in your markdown file.
+
+Solution: **[Database Evaluation Task](DB-Task.md)**
 
 ## Quickstart dev
 
@@ -47,14 +50,13 @@ For other OSes, the installation tools are in the links for `nvm` and `yarn` abo
    1. `cd news-app`
    2. In `news-app` - `.env`:
         ```
-        NODE_ENV=dev
-        VUE_APP_SERVICE_URL=http://localhost:3000/
-        VUE_APP_SERVICE_KEY={{ TBA API key for serverless when closer to deploy }}
+       PROXY_MODE=dev
+       API_URL=http://localhost:3000/
         ```
    3. `yarn install`
-   4. Run `yarn serve`
+   4. Run `npm run start:dev`
 
-Once you are able to run the app following the steps [above](#quickstart-dev), it'll render the view on `http://localhost:8080/` like this: ![news-app](news-app.png)
+Once you are able to run the app following the steps [above](#quickstart-dev), it'll render the view on `http://localhost:3100/` like this: ![news-app](news-app.png)
 Your backend service will be running on `http://localhost:3000/` should look like this:
 ![news-service](news-service.png)
 
@@ -79,11 +81,11 @@ Both apps have [Jest](https://jestjs.io/) set up for testing in `/tests`, and us
 ### What we are looking for
 
 These are the guidelines on what we are looking for in our submissions:
-- Code is human-readable and easy to understand
-- Code patterns correspond to expected user-facing functionality
-- The accompanying file of markdown answers is well-structured and communicates your thoughts clearly and concisely
-- Any tests that are written make sense according to how a user might behave on the page
-- The styling of code is consistent and technical choices are well-commnunicated
-- As a news reader, it is clear how I should can use the page to find news that I am looking for
-- If technologies used are changed (e.g. using React instead of Vue), a set of instructions on how to run the app are updated in the README.
-- Any changes to file structure are also communicated in the README
+- [x] Code is human-readable and easy to understand
+- [x] Code patterns correspond to expected user-facing functionality
+- [x] The accompanying file of markdown answers is well-structured and communicates your thoughts clearly and concisely
+- [x] Any tests that are written make sense according to how a user might behave on the page
+- [x] The styling of code is consistent and technical choices are well-communicated
+- [x] As a news reader, it is clear how I should use the page to find news that I am looking for
+- [x] If technologies used are changed (e.g. using React instead of Vue), a set of instructions on how to run the app are updated in the README.
+- [x] Any changes to file structure are communicated in the README
