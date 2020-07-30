@@ -44,8 +44,6 @@ class WebAppDocument extends Document {
                     <meta charSet="utf-8"/>
                     <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
                     <meta name="theme-color" content="#1F2833"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=1"/>
-                    <title>NewsAPI Feed</title>
                 </Head>
                 <body>
                     <Main />
